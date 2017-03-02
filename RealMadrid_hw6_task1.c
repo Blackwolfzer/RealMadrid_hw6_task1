@@ -19,14 +19,14 @@
 /* Function Prototypes */
 void Usage(void);
 void Polar (double x, double y, double *r, double *theta);
-void ShowIt(double ra, double ang);
+void ShowIt(double radius, double angle);
 void GetRec(double* x, double* y);
 int AskQuestion(void);
 
 /* Main Program */
 int  main(int argc, char *argv[])
 {
-	double ar1, ar2;
+	double ar1, ar2, rad, ang;
 	//Allow for 2 parameters
 	if (argc !=3)
 	{
@@ -39,11 +39,19 @@ int  main(int argc, char *argv[])
 		Usage();
 	}
 	ar2 = atof(argv[2]);
+	if (ar2 == 0.0)
+	{
+		Usage();
+	}
+	Polar(ar1, ar2, &rad, &ang);
+	ShowIt(rad, ang);
 
-	int ans;
-	ShowIt(1.0, 2.0);
-	ans = AskQuestion();
-	printf("%d\n",ans); // extra answer to check to see if function worked
+	AskQuestion();
+
+	//int ans;
+	//ShowIt(1.0, 2.0);
+	//ans = AskQuestion();
+	//printf("%d\n",ans); // extra answer to check to see if function worked
 	
 	return 0;
 }
@@ -86,12 +94,12 @@ int AskQuestion(void)
 }
 
 
-void ShowIt(double ra, double ang)
+void ShowIt(double radius, double angle)
 {
 	double rad, angl;
-	rad = ra;
-	angl = ang;
-	printf("The radius is %lf\n and the angle is %lf\n" rad, angl);
+	rad = radius;
+	angl = angle;
+	printf("The radius is %f\n and the angle is %f\n", rad, angl);
 
 
 	return;
