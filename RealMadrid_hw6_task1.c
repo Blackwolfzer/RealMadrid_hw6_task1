@@ -14,8 +14,10 @@
  */
 #include <stdio.h>		/* For Standard I/O */
 #include <stdlib.h>
+#include <math.h>
 
 /* Function Prototypes */
+void Polar (double x, double y, double *r, double *theta);
 void ShowIt(double ra, double ang);
 int AskQuestion(void);
 
@@ -23,16 +25,24 @@ int AskQuestion(void);
 int  main(int argc, char *argv[])
 {
 	int ans;
-	ShowIt(1,2);
+	ShowIt(1.0, 2.0);
 	ans = AskQuestion();
 	printf("%d\n",ans); // extra answer to check to see if function worked
-
+	
 	return 0;
 }
 
 
 /* Function Defenitions */
 
+void Polar (double x, double y, double *r, double *theta)
+{
+	//r = sqrt(x^2 + y^2) theta = arctan (y/x)
+	*r = sqrt(pow(x, 2) + pow(y, 2));
+	*theta = atan(y/x);
+	printf("Distance from origin: %lf\n", *r);
+	printf("Angle (in degrees) from x-axis: %lf\n\n", *theta);
+}
 
 int AskQuestion(void)
 {
