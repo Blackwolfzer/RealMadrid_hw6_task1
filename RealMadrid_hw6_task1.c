@@ -17,8 +17,10 @@
 #include <math.h>
 
 /* Function Prototypes */
+void Usage(void);
 void Polar (double x, double y, double *r, double *theta);
 void ShowIt(double ra, double ang);
+void GetRec(double* x, double* y);
 int AskQuestion(void);
 
 /* Main Program */
@@ -103,3 +105,14 @@ void Usage(void)
 	printf("x-coordinate CANNOT = 0\n");
 	exit (1);
 }
+
+void GetRec(double* x, double* y)
+{
+	printf("Rectanglar to Polar Coordinate Conversion\n");
+	printf("Enter x-coordinate: ");
+	scanf("%p", &x);
+	printf("Enter y-coordinate: ");
+	scanf("%p", &y);
+	return;
+}
+
