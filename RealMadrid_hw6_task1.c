@@ -47,7 +47,7 @@ int  main(int argc, char *argv[])
 }
 
 
-/* Function Defenitions */
+/* Function Definitions */
 
 void Polar (double x, double y, double *r, double *theta)
 {
