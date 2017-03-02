@@ -44,15 +44,21 @@ int  main(int argc, char *argv[])
 	{
 		Usage();
 	}
-	Polar(ar1, ar2, &rad, &ang);
-	ShowIt(rad, ang);
-	AskQuestion();
-	printf("%d",close);
-
-//	int ans;
-//	ShowIt(1.0, 2.0);
-//	ans = AskQuestion();
-//	printf("%d\n",ans); // extra answer to check to see if function worked
+	while (1)
+	{
+		Polar(ar1, ar2, &rad, &ang);
+		ShowIt(rad, ang);
+		close = AskQuestion();
+		if (close == 0)
+		{
+			break;
+		}
+		else
+		{
+			GetRec(&ar1,&ar2);
+		}
+	}
+	printf("thankyou for useing this program\n");
 	
 	return 0;
 }
@@ -80,12 +86,11 @@ int AskQuestion(void)
 		scanf("%d" , &a);
 		if (a == 1)
 		{
-			*close = 1;
 			break;
 		}
 		else if (a == 0)
 		{
-			*close = 0;
+			
 			break;
 		}
 		else
