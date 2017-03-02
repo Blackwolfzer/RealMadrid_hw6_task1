@@ -65,7 +65,7 @@ void Polar (double x, double y, double *rad, double *ang)
 	double p= (y/x);
 	//r = sqrt(x^2 + y^2) theta = arctan (y/x)
 	*rad = sqrt(pow(x, 2) + pow(y, 2));
-	*ang = atan(p);
+	*ang = ((atan(p)) * 180)/3.14159;
 	printf("Distance from origin: %lf\n", *rad);
 	printf("Angle (in degrees) from x-axis: %lf\n\n", *ang);
 }
@@ -75,7 +75,7 @@ int AskQuestion(void)
 	int a;
 	while (1)
 	{
-		printf("Would you like to run this program againi (y/n):\n ");
+		printf("Would you like to run this program again (y/n):\n ");
 		printf("   Y = 1      N = 0  \n");
 		scanf("%d" , &a);
 		if (a == 1)
