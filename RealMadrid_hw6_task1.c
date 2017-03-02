@@ -58,7 +58,7 @@ int AskQuestion(void)
 		scanf("%d" , &a);
 		if (a == 1)
 		{
-			break;
+			continue;
 		}
 		else if (a == 0)
 		{
