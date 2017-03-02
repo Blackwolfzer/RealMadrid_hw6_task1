@@ -19,14 +19,15 @@
 /* Function Prototypes */
 void Usage(void);
 void Polar (double x, double y, double *r, double *theta);
-void ShowIt(double ra, double ang);
+void ShowIt(double radius, double angle);
 void GetRec(double* x, double* y);
 int AskQuestion(void);
 
 /* Main Program */
 int  main(int argc, char *argv[])
 {
-	double ar1, ar2;
+	int close;
+	double ar1, ar2, rad, ang;
 	//Allow for 2 parameters
 	if (argc !=3)
 	{
@@ -39,11 +40,19 @@ int  main(int argc, char *argv[])
 		Usage();
 	}
 	ar2 = atof(argv[2]);
+	if (ar2 == 0.0)
+	{
+		Usage();
+	}
+	Polar(ar1, ar2, &rad, &ang);
+	ShowIt(rad, ang);
+	AskQuestion();
+	printf("%d",close);
 
-	int ans;
-	ShowIt(1.0, 2.0);
-	ans = AskQuestion();
-	printf("%d\n",ans); // extra answer to check to see if function worked
+//	int ans;
+//	ShowIt(1.0, 2.0);
+//	ans = AskQuestion();
+//	printf("%d\n",ans); // extra answer to check to see if function worked
 	
 	return 0;
 }
@@ -51,13 +60,14 @@ int  main(int argc, char *argv[])
 
 /* Function Defenitions */
 
-void Polar (double x, double y, double *r, double *theta)
+void Polar (double x, double y, double *rad, double *ang)
 {
+	double p= (y/x);
 	//r = sqrt(x^2 + y^2) theta = arctan (y/x)
-	*r = sqrt(pow(x, 2) + pow(y, 2));
-	*theta = atan(y/x);
-	printf("Distance from origin: %lf\n", *r);
-	printf("Angle (in degrees) from x-axis: %lf\n\n", *theta);
+	*rad = sqrt(pow(x, 2) + pow(y, 2));
+	*ang = atan(p);
+	printf("Distance from origin: %lf\n", *rad);
+	printf("Angle (in degrees) from x-axis: %lf\n\n", *ang);
 }
 
 int AskQuestion(void)
@@ -70,10 +80,12 @@ int AskQuestion(void)
 		scanf("%d" , &a);
 		if (a == 1)
 		{
-			continue;
+			*close = 1;
+			break;
 		}
 		else if (a == 0)
 		{
+			*close = 0;
 			break;
 		}
 		else
@@ -86,12 +98,12 @@ int AskQuestion(void)
 }
 
 
-void ShowIt(double ra, double ang)
+void ShowIt(double radius, double angle)
 {
 	double rad, angl;
-	rad = ra;
-	angl = ang;
-	printf("The radius is %lf\n and the angle is %lf\n" rad, angl);
+	rad = radius;
+	angl = angle;
+	printf("The radius is %f\n and the angle is %f\n", rad, angl);
 
 
 	return;
