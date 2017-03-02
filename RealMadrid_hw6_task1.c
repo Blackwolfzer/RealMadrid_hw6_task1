@@ -24,6 +24,20 @@ int AskQuestion(void);
 /* Main Program */
 int  main(int argc, char *argv[])
 {
+	double ar1, ar2;
+	//Allow for 2 parameters
+	if (argc !=3)
+	{
+		Usage();
+	}
+	//Convert input parameters to float
+	ar1 = atof(argv[1]);
+	if (ar1 == 0.0)
+	{
+		Usage();
+	}
+	ar2 = atof(argv[2]);
+
 	int ans;
 	ShowIt(1.0, 2.0);
 	ans = AskQuestion();
@@ -54,7 +68,7 @@ int AskQuestion(void)
 		scanf("%d" , &a);
 		if (a == 1)
 		{
-			break;
+			continue;
 		}
 		else if (a == 0)
 		{
@@ -79,4 +93,13 @@ void ShowIt(double ra, double ang)
 
 
 	return;
+}
+
+void Usage(void)
+{
+	printf("Usage: ./polar x-coordinate y-coordinate\n");
+	printf("both parameters are required\n");
+	printf("must be a floating point\n");
+	printf("x-coordinate CANNOT = 0\n");
+	exit (1);
 }
