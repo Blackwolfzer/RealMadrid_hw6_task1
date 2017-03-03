@@ -50,7 +50,6 @@ int  main(int argc, char *argv[])
 	Polar(ar1, ar2, &rad, &ang);
 	ShowIt(rad, ang);
 
-<<<<<<< HEAD
 	AskQuestion();
 
 	//int ans;
@@ -59,14 +58,12 @@ int  main(int argc, char *argv[])
 	//printf("%d\n",ans); // extra answer to check to see if function worked
 	
 	AskQuestion();
-	//printf("%d",close); //compile error so to look at the program I commented out line 61 just so I could compile, but I put it back in case you could see what's the error.
+	printf("%d",close); //compile error so to look at the program I commented out line 61 just so I could compile, but I put it back in case you could see what's the error.
 
 //	int ans;
 //	ShowIt(1.0, 2.0);
 //	ans = AskQuestion();
 //	printf("%d\n",ans); // extra answer to check to see if function worked
-=======
->>>>>>> ec2019d2f89a163447339ab139327a10cd6af62c
 	
 	while (1)
 	{
