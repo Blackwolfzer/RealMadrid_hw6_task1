@@ -96,6 +96,10 @@ int AskQuestion(void)
 			
 			break;
 		}
+		else if (getchar() != '\n')
+		{
+			printf("Your answer is incorrect plz try again\n");
+		}
 		else
 		{
 			printf("Your answer is incorrect plz try again\n");
