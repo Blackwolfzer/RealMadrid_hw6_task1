@@ -1,0 +1,198 @@
+[33mcommit 4b0d7777765031df75c4eecdda8c3b385468b9f5[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Fri Mar 3 19:57:14 2017 +0000
+
+    Fixed bug so that it doesn't run forever when entering a letter
+
+[33mcommit d5aa4f686683df14a1d1a8da0b508ed6fd70e4f2[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Fri Mar 3 15:26:33 2017 +0000
+
+    Initial Commit
+
+[33mcommit 8e1dd36e618fb1546e99632e9bca79b7bc151580[m
+Merge: c73bc0b 2d0f480
+Author: Julie Collings <juliecollings@mail.weber.edu>
+Date:   Fri Mar 3 14:53:51 2017 +0000
+
+    Merge changes
+
+[33mcommit c73bc0baa7acf1b574df9776fca9644f32e4c37e[m
+Author: Julie Collings <juliecollings@mail.weber.edu>
+Date:   Fri Mar 3 14:50:51 2017 +0000
+
+    Merge changes
+
+[33mcommit 2d0f4803ded8f9c300cffa7f2d41763597d4ddb8[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Fri Mar 3 05:33:01 2017 +0000
+
+    formatting
+
+[33mcommit 44f9d16ce6f003b71343f28be5c778a2122d7940[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Fri Mar 3 05:20:34 2017 +0000
+
+    added loop to GetRec function
+
+[33mcommit c454647daffd753e12fc1f04210d219680b1685c[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Fri Mar 3 04:41:53 2017 +0000
+
+    work damn you work
+
+[33mcommit 7ebd80f8c59866b6968898cac83e0a226357896c[m
+Merge: bb266c1 5ff8131
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Fri Mar 3 04:39:53 2017 +0000
+
+    Merge branch 'master' of https://github.com/Blackwolfzer/RealMadrid_hw6_task1
+
+[33mcommit bb266c198af3592cf878417a704eeef13680a1ca[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Fri Mar 3 04:33:58 2017 +0000
+
+     grrr
+
+[33mcommit 5ff8131eda0d718f6f9ccd472c00a06b97e414c9[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Fri Mar 3 04:26:32 2017 +0000
+
+    Merging
+
+[33mcommit 6e56e7baea516894ea724f692be51e7e9034bbab[m
+Merge: 29eea30 ec2019d
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Fri Mar 3 03:56:39 2017 +0000
+
+    Merge branch 'master' of https://github.com/Blackwolfzer/RealMadrid_hw6_task1
+
+[33mcommit 29eea307129d4dcb33bfbd5de19e7e03c856a87c[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Fri Mar 3 03:46:09 2017 +0000
+
+    Formatting
+
+[33mcommit ec2019d2f89a163447339ab139327a10cd6af62c[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Fri Mar 3 03:44:11 2017 +0000
+
+    i think we have a working model
+
+[33mcommit db026ef635438d541a6ab86ef890918ffb8e7725[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Fri Mar 3 03:26:01 2017 +0000
+
+    Switched a few print statements in Polar & ShowIt function
+
+[33mcommit 01a706d1da08b472f42cd195c85d0a9ce2bab311[m
+Merge: 67d2a77 a2d6233
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Fri Mar 3 02:09:54 2017 +0000
+
+    Merge branch 'master' of https://github.com/Blackwolfzer/RealMadrid_hw6_task1
+
+[33mcommit a2d62333fb689e0eae28dc09b1524e4a7f623d19[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Fri Mar 3 01:49:59 2017 +0000
+
+    pointer don't like us this is evil
+
+[33mcommit ad2d27f861dd250d2ace493d65db0ee3e3bad7b5[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Thu Mar 2 20:59:28 2017 +0000
+
+    almost to the finsih just got to work on getrec then we should be good
+
+[33mcommit 7e0981ec39cf68d13ca6baeb2fd759100f93214b[m
+Author: Julie Collings <juliecollings@mail.weber.edu>
+Date:   Thu Mar 2 19:10:18 2017 +0000
+
+    Merge changes
+
+[33mcommit 55cc7e47f69356c0542c1606ec2c5a0179ff72ee[m
+Merge: 09e585b 24c9018
+Author: Julie Collings <juliecollings@mail.weber.edu>
+Date:   Thu Mar 2 19:02:34 2017 +0000
+
+    Merge branch 'master' of https://github.com/Blackwolfzer/RealMadrid_hw6_task1
+
+[33mcommit 09e585b919ced5a105d9f0a7c682b735c0b78801[m
+Author: Julie Collings <juliecollings@mail.weber.edu>
+Date:   Thu Mar 2 19:02:30 2017 +0000
+
+    merge changes
+
+[33mcommit 67d2a77b249e626465785ec144a67ffbb8c5811f[m
+Merge: 235411d 24c9018
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Thu Mar 2 18:28:35 2017 +0000
+
+    Merge branch 'master' of https://github.com/Blackwolfzer/RealMadrid_hw6_task1
+
+[33mcommit 235411d0c78d3a58e0a7593916689418930ba87c[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Thu Mar 2 18:26:53 2017 +0000
+
+    working on functions
+
+[33mcommit 24c9018a8825b63ceee09d8abd2a7259aa1589f1[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Thu Mar 2 18:25:21 2017 +0000
+
+     almost stupid thing almost
+
+[33mcommit 255d562f7690fcfe30ea4b8f5535ae596dff2943[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Thu Mar 2 17:24:44 2017 +0000
+
+    GetRec function done
+
+[33mcommit 54a359d7a2c0a905af527f08f110721a6e949d4e[m
+Merge: 0313f56 5446e12
+Author: Julie Collings <juliecollings@mail.weber.edu>
+Date:   Thu Mar 2 17:13:07 2017 +0000
+
+    Merge branch 'master' of https://github.com/Blackwolfzer/RealMadrid_hw6_task1
+
+[33mcommit 0313f560028eebd4dbaa452b1f45ee15733dc2c8[m
+Author: Julie Collings <juliecollings@mail.weber.edu>
+Date:   Thu Mar 2 17:13:04 2017 +0000
+
+    Merge changes
+
+[33mcommit 5446e122232094096626cb10c96ed122075b030e[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Thu Mar 2 17:11:43 2017 +0000
+
+    why
+
+[33mcommit 9192abd9ef62b87fe8b9eac6fd12065a556d8352[m
+Author: Sharon Dansie <sharondansie@mail.weber.edu>
+Date:   Thu Mar 2 17:07:43 2017 +0000
+
+    Usage Function done and parameters set
+
+[33mcommit 52c36ea5efc4363b415bc2e6456aca678fe22f2c[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Thu Mar 2 03:14:44 2017 +0000
+
+     need to fix bug in funciton showit
+
+[33mcommit c7b560a91335d4a465bef6fb7f9928ec071e8f03[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Tue Feb 28 17:20:13 2017 +0000
+
+    ignore crap
+
+[33mcommit 1cd8ee07f480e081c6bc7198530f6bd7517d9e1a[m
+Author: Daniel Tayler <danieltayler@mail.weber.edu>
+Date:   Tue Feb 28 17:16:20 2017 +0000
+
+    init commit
+
+[33mcommit 9d8a68d55c4cdbdd83cf78179058794f74666a18[m
+Author: Blackwolfzer <danieltayler@mail.weber.edu>
+Date:   Tue Feb 28 10:02:42 2017 -0700
+
+    Initial commit
