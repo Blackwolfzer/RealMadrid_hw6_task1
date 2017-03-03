@@ -47,6 +47,7 @@ int  main(int argc, char *argv[])
 	{
 		Usage();
 	}
+<<<<<<< HEAD
 	Polar(ar1, ar2, &rad, &ang);
 	ShowIt(rad, ang);
 <<<<<<< HEAD
@@ -66,19 +67,36 @@ int  main(int argc, char *argv[])
 //	ans = AskQuestion();
 //	printf("%d\n",ans); // extra answer to check to see if function worked
 >>>>>>> 24c9018a8825b63ceee09d8abd2a7259aa1589f1
+=======
+	while (1)
+	{
+		Polar(ar1, ar2, &rad, &ang);
+		ShowIt(rad, ang);
+		close = AskQuestion();
+		if (close == 0)
+		{
+			break;
+		}
+		else
+		{
+			GetRec(&ar1,&ar2);
+		}
+	}
+	printf("thankyou for useing this program\n");
+>>>>>>> a2d62333fb689e0eae28dc09b1524e4a7f623d19
 	
 	return 0;
 }
 
 
-/* Function Defenitions */
+/* Function Definitions */
 
 void Polar (double x, double y, double *rad, double *ang)
 {
 	double p= (y/x);
 	//r = sqrt(x^2 + y^2) theta = arctan (y/x)
 	*rad = sqrt(pow(x, 2) + pow(y, 2));
-	*ang = atan(p);
+	*ang = ((atan(p)) * 180)/3.14159;
 	printf("Distance from origin: %lf\n", *rad);
 	printf("Angle (in degrees) from x-axis: %lf\n\n", *ang);
 }
@@ -88,17 +106,16 @@ int AskQuestion(void)
 	int a;
 	while (1)
 	{
-		printf("Would you like to run this program againi (y/n):\n ");
+		printf("Would you like to run this program again (y/n):\n ");
 		printf("   Y = 1      N = 0  \n");
 		scanf("%d" , &a);
 		if (a == 1)
 		{
-			*close = 1;
 			break;
 		}
 		else if (a == 0)
 		{
-			*close = 0;
+			
 			break;
 		}
 		else
@@ -133,11 +150,14 @@ void Usage(void)
 
 void GetRec(double* x, double* y)
 {
+	double xx, yy; // its working this way but i odn't know why pointers don't work
 	printf("Rectanglar to Polar Coordinate Conversion\n");
 	printf("Enter x-coordinate: ");
-	scanf("%p", &x);
+	scanf("%lf", &xx);
 	printf("Enter y-coordinate: ");
-	scanf("%p", &y);
+	scanf("%lf", &yy);
+	*x = xx;
+	*y = yy;
 	return;
 }
 
