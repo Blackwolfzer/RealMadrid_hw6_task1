@@ -50,6 +50,7 @@ int  main(int argc, char *argv[])
 	Polar(ar1, ar2, &rad, &ang);
 	ShowIt(rad, ang);
 
+<<<<<<< HEAD
 	AskQuestion();
 
 	//int ans;
@@ -64,6 +65,8 @@ int  main(int argc, char *argv[])
 //	ShowIt(1.0, 2.0);
 //	ans = AskQuestion();
 //	printf("%d\n",ans); // extra answer to check to see if function worked
+=======
+>>>>>>> ec2019d2f89a163447339ab139327a10cd6af62c
 	
 	while (1)
 	{
