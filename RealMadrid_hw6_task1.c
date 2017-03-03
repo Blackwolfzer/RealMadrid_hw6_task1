@@ -136,8 +136,20 @@ void GetRec(double* x, double* y)
 {
 	double xx, yy; // its working this way but i odn't know why pointers don't work
 	printf("Rectanglar to Polar Coordinate Conversion\n");
-	printf("Enter x-coordinate: ");
-	scanf("%lf", &xx);
+	while (1)
+	{
+		printf("Enter x-coordinate: ");
+		scanf("%lf", &xx);
+		if (xx == 0.0)
+		{
+			printf("x CANNOT = 0\n");
+			continue;
+		}
+		else
+		{
+			break;
+		}
+	}
 	printf("Enter y-coordinate: ");
 	scanf("%lf", &yy);
 	*x = xx;
