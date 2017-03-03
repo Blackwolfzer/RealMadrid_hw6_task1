@@ -26,16 +26,15 @@ int AskQuestion(void);
 /* Main Program */
 int  main(int argc, char *argv[])
 {
-<<<<<<< HEAD
-=======
 	int close;
->>>>>>> 24c9018a8825b63ceee09d8abd2a7259aa1589f1
 	double ar1, ar2, rad, ang;
+
 	//Allow for 2 parameters
 	if (argc !=3)
 	{
 		Usage();
 	}
+
 	//Convert input parameters to float
 	ar1 = atof(argv[1]);
 	if (ar1 == 0.0)
@@ -47,10 +46,9 @@ int  main(int argc, char *argv[])
 	{
 		Usage();
 	}
-<<<<<<< HEAD
+
 	Polar(ar1, ar2, &rad, &ang);
 	ShowIt(rad, ang);
-<<<<<<< HEAD
 
 	AskQuestion();
 
@@ -58,16 +56,15 @@ int  main(int argc, char *argv[])
 	//ShowIt(1.0, 2.0);
 	//ans = AskQuestion();
 	//printf("%d\n",ans); // extra answer to check to see if function worked
-=======
+	
 	AskQuestion();
-	printf("%d",close);
+	printf("%d",close); //compile error so to look at the program I commented out line 61 just so I could compile, but I put it back in case you could see what's the error.
 
 //	int ans;
 //	ShowIt(1.0, 2.0);
 //	ans = AskQuestion();
 //	printf("%d\n",ans); // extra answer to check to see if function worked
->>>>>>> 24c9018a8825b63ceee09d8abd2a7259aa1589f1
-=======
+	
 	while (1)
 	{
 		Polar(ar1, ar2, &rad, &ang);
@@ -82,8 +79,7 @@ int  main(int argc, char *argv[])
 			GetRec(&ar1,&ar2);
 		}
 	}
-	printf("thankyou for useing this program\n");
->>>>>>> a2d62333fb689e0eae28dc09b1524e4a7f623d19
+	printf("Thank you for using this program.\n");
 	
 	return 0;
 }
@@ -97,8 +93,10 @@ void Polar (double x, double y, double *rad, double *ang)
 	//r = sqrt(x^2 + y^2) theta = arctan (y/x)
 	*rad = sqrt(pow(x, 2) + pow(y, 2));
 	*ang = ((atan(p)) * 180)/3.14159;
-	printf("Distance from origin: %lf\n", *rad);
-	printf("Angle (in degrees) from x-axis: %lf\n\n", *ang);
+	//printf("Distance from origin: %lf\n", *rad);
+	//printf("Angle (in degrees) from x-axis: %lf\n\n", *ang);
+	//moved the above two print statements to ShowIt Function which is suppose to display the answer.
+	return;
 }
 
 int AskQuestion(void)
@@ -133,18 +131,22 @@ void ShowIt(double radius, double angle)
 	double rad, angl;
 	rad = radius;
 	angl = angle;
-	printf("The radius is %f\n and the angle is %f\n", rad, angl);
-
+	printf("\nThe polar coordinates are: \n");
+	printf("Distance from origin: %lf\n", rad);
+	printf("Angle (in degrees) from x-axis: %lf\n\n", angl);
+	//printf("The radius is %f\n and the angle is %f\n", rad, angl);
+	//Removed above print statment cuz it was duplicating the answer.
+	//Added print statements from the Polar function.
 
 	return;
 }
 
 void Usage(void)
 {
-	printf("Usage: ./polar x-coordinate y-coordinate\n");
-	printf("both parameters are required\n");
-	printf("must be a floating point\n");
-	printf("x-coordinate CANNOT = 0\n");
+	printf("\nUsage: ./polar x-coordinate y-coordinate\n");
+	printf(" -> both parameters are required\n");
+	printf(" -> must be a floating point\n");
+	printf(" -> x-coordinate CANNOT = 0\n");
 	exit (1);
 }
 
