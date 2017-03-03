@@ -3,7 +3,7 @@
  *
  *       Filename:  RealMadrid_hw6_task1.c
  *       	Usage:  ./RealMadrid_hw6_task1.c
- *    Description:  :
+ *    Description:  Rectangular to Polar Conversion
  *
  *        Version:  1.0
  *        Created:  02/28/2017 05:07:32 PM
@@ -75,9 +75,7 @@ void Polar (double x, double y, double *rad, double *ang)
 	//r = sqrt(x^2 + y^2) theta = arctan (y/x)
 	*rad = sqrt(pow(x, 2) + pow(y, 2));
 	*ang = ((atan(p)) * 180)/3.14159;
-	//printf("Distance from origin: %lf\n", *rad);
-	//printf("Angle (in degrees) from x-axis: %lf\n\n", *ang);
-	//moved the above two print statements to ShowIt Function which is suppose to display the answer.
+
 	return;
 }
 
@@ -116,9 +114,6 @@ void ShowIt(double radius, double angle)
 	printf("\nThe polar coordinates are: \n");
 	printf("   Distance from origin: %lf\n", rad);
 	printf("   Angle (in degrees) from x-axis: %lf\n\n", angl);
-	//printf("The radius is %f\n and the angle is %f\n", rad, angl);
-	//Removed above print statment cuz it was duplicating the answer.
-	//Added print statements from the Polar function.
 
 	return;
 }
@@ -134,7 +129,7 @@ void Usage(void)
 
 void GetRec(double* x, double* y)
 {
-	double xx, yy; // its working this way but i odn't know why pointers don't work
+	double xx, yy;
 	printf("Rectanglar to Polar Coordinate Conversion\n");
 	while (1)
 	{
@@ -154,6 +149,7 @@ void GetRec(double* x, double* y)
 	scanf("%lf", &yy);
 	*x = xx;
 	*y = yy;
+
 	return;
 }
 
