@@ -58,7 +58,7 @@ int  main(int argc, char *argv[])
 			GetRec(&ar1,&ar2);
 		}
 	}
-	printf("thankyou for useing this program\n");
+	printf("Thank you for using this program\n");
 	
 	return 0;
 }
