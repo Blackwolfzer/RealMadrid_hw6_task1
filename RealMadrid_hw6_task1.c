@@ -58,7 +58,7 @@ int  main(int argc, char *argv[])
 	//printf("%d\n",ans); // extra answer to check to see if function worked
 	
 	AskQuestion();
-	printf("%d",close); //compile error so to look at the program I commented out line 61 just so I could compile, but I put it back in case you could see what's the error.
+	//printf("%d",close); //compile error so to look at the program I commented out line 61 just so I could compile, but I put it back in case you could see what's the error.
 
 //	int ans;
 //	ShowIt(1.0, 2.0);
@@ -132,8 +132,8 @@ void ShowIt(double radius, double angle)
 	rad = radius;
 	angl = angle;
 	printf("\nThe polar coordinates are: \n");
-	printf("Distance from origin: %lf\n", rad);
-	printf("Angle (in degrees) from x-axis: %lf\n\n", angl);
+	printf("   Distance from origin: %lf\n", rad);
+	printf("   Angle (in degrees) from x-axis: %lf\n\n", angl);
 	//printf("The radius is %f\n and the angle is %f\n", rad, angl);
 	//Removed above print statment cuz it was duplicating the answer.
 	//Added print statements from the Polar function.
@@ -146,7 +146,7 @@ void Usage(void)
 	printf("\nUsage: ./polar x-coordinate y-coordinate\n");
 	printf(" -> both parameters are required\n");
 	printf(" -> must be a floating point\n");
-	printf(" -> x-coordinate CANNOT = 0\n");
+	printf(" -> x-coordinate CANNOT = 0\n\n");
 	exit (1);
 }
 
